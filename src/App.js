@@ -5,18 +5,14 @@ import CreateTweet from "./Components/CreateTweet";
 import React, {useState} from "react";
 
 function App() {
-  const [name,setName]=useState('Dev Ed');
-
-  const sayHelloHandler = () => {
-    setName('Florin Pop')  
-  };
+const [name,setName]=useState("Tinsae"); 
+const message="Holyday"
 
    return (
     <div>
-      <h1>Hello {name} </h1>
-      <button onClick={sayHelloHandler}>Click</button>
-      {/* <CreateTweet />
-      <TweetList name={name} message={message}  /> */}
+      
+      <CreateTweet />
+      <TweetList name={name} message={message}  />
     </div>
   );
 }

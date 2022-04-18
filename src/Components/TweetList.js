@@ -8,7 +8,7 @@ const TweetList = ({name,message}) => {
       <Tweet name={name} message={message} />
       <Tweet name={name} message={message} />
       <Tweet name={name} message={message} />
-      <Tweet name={name} message={message} />
+      
     </div>
   );
 };
