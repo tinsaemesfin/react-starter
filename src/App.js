@@ -2,15 +2,18 @@ import "./App.css";
 import "./Components/Tweet";
 import TweetList from "./Components/TweetList";
 import CreateTweet from "./Components/CreateTweet";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 function App() {
+ 
   const [name, setName] = useState("Tinsae");
   const [textInput, setTextInput] = useState("");
 
   const [tweets, setTweets] = useState([]);
 
-  const message = "Holyday";
+  useEffect(()=>{
+    console.log("Heloo");
+  },[tweets]);
 
   return (
     <div>
