@@ -12,7 +12,7 @@ const CreateTweet = ({tweets,textInput,setTweets,setTextInput}) => {
   return (
     <form >
       <textarea
-        value={textInput}
+        value={textInput} 
         onChange={userInputHandler}
         cols="30"
         rows="10"
