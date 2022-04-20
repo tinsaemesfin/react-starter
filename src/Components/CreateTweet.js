@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-
+import {v4 as uuid} from "uuid";
 const CreateTweet = ({tweets,textInput,setTweets,setTextInput}) => {
   const userInputHandler = (e) => {
     setTextInput(e.target.value);
   };
   const submitfo = (e) =>{
     e.preventDefault();
-    setTweets([...tweets,textInput]);
+    setTweets([...tweets,{message:textInput,id:uuid()}]);
     setTextInput("");
   }
   return (
